@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/ef6c4f19c26fbcd2b5202a88ddd932f5?family=Benguiat+Bold');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.main-header-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header img {
+    width: 120px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #e5e5e5;
+    font-size: 14px;
+}
+
+header ul li a:hover {
+    color: #fff;
+}
+
+.main-header-right ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.main-header-right img {
+    width: 30px;
+    border-radius: 4px;
+}
+
+.main-header-right i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-bottom: 380px;
+    overflow: visible;
+}
+
+.hero-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.main-hero {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 60px;
+    max-width: 650px;
+    z-index: 2;
+}
+
+.main-hero h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    font-family: "Benguiat Bold", serif;
+    color: red;
+}
+
+.main-hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #e5e5e5;
+    line-height: 1.4;
+}
+
+.lower-main {
+    display: flex;
+    gap: 15px;
+}
+
+.lower-main button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-play {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-play:hover {
+    transform: scale(1.05);
+}
+
+.btn-info {
+    color: #fff;
+    background-color: rgba(50, 50, 50, 0.6);
+}
+
+.btn-info:hover {
+    transform: scale(1.05);
+}
+
+.hero-section .scroll-section {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    padding: 80px 30px 30px;
+    z-index: 5;
+}
+
+section:not(.hero-section) .scroll-section {
+    position: relative;
+    padding: 40px 30px;
+}
+
+.disc {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.disc h1 {
+    font-size: 24px;
+}
+
+.open-close {
+    overflow: hidden;
+}
+
+.open-close a {
+    margin-left: -200px;
+    text-decoration: none;
+    transition: all 0.8s ease;
+    color: #54B9C5;
+}
+
+.disc:hover a {
+    margin-left: 10px;
+}
+
+.scroll-main-video {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+}
+
+.scroll-main-video::-webkit-scrollbar {
+    display: none;
+}
+
+.video-scroll {
+    min-width: 300px;
+    position: relative;
+    border-radius: 6px;
+    transition: transform 0.35s ease;
+    transform-origin: center bottom;
+    z-index: 1;
+}
+
+.video-scroll img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.video-scroll:hover {
+    transform: scale(1.25) translateY(-60px);
+    z-index: 50;
+}
+
+.movie-bottom {
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    width: 100%;
+    background: #111;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.video-scroll:hover .movie-bottom {
+    opacity: 1;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.genres {
+    font-size: 13px;
+    color: #aaa;
+}
+
+section {
+    width: 100%;
+}
+
+#footer-1{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+#footer-1>div>ul{
+  list-style: none;
+}
+#footer-1>div>ul>li{
+  margin: 10px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
