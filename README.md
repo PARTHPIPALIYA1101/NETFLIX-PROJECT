@@ -89,5 +89,5 @@ This clone is **not affiliated with or endorsed by Netflix**.
 
 ## 👤 Author
 
-**Parth**  
+**Pipaliya Parth**  
 Frontend UI Practice Project
